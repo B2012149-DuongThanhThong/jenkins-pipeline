@@ -1,3 +1,10 @@
-pipleline{
-    
+pipleline {
+    agent any
+    stages {
+        stage('clone') {
+            steps {
+                git 'https://github.com/B2012149-DuongThanhThong/jenkins-pipeline.git'
+            }
+        }
+    }
 }
